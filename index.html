@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Biblioteca</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Gestión de Biblioteca</h1>
+    <nav>
+      <ul>
+        <li><a href="#libros">Libros</a></li>
+        <li><a href="#autores">Autores</a></li>
+        <li><a href="#editoriales">Editoriales</a></li>
+        <li><a href="#usuarios">Usuarios</a></li>
+        <li><a href="#categorias">Categorías</a></li>
+        <li><a href="#prestamos">Préstamos</a></li>
+        <li><a href="#multas">Multas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección Libros -->
+    <section id="libros">
+      <h2>Gestión de Libros</h2>
+      <button id="fetchLibros">Cargar Libros</button>
+      <table id="librosTable">
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Editorial</th>
+            <th>Año</th>
+            <th>ISBN</th>
+            <th>Disponibilidad</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- Sección Autores -->
+    <section id="autores">
+      <h2>Gestión de Autores</h2>
+      <button id="fetchAutores">Cargar Autores</button>
+      <table id="autoresTable">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Nacionalidad</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- Sección Editoriales -->
+    <section id="editoriales">
+      <h2>Gestión de Editoriales</h2>
+      <button id="fetchEditoriales">Cargar Editoriales</button>
+      <table id="editorialesTable">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Dirección</th>
+            <th>Teléfono</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- Sección Usuarios -->
+    <section id="usuarios">
+      <h2>Gestión de Usuarios</h2>
+      <button id="fetchUsuarios">Cargar Usuarios</button>
+      <table id="usuariosTable">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Teléfono</th>
+            <th>Dirección</th>
+            <th>Fecha de Registro</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- Sección Categorías -->
+    <section id="categorias">
+      <h2>Gestión de Categorías</h2>
+      <button id="fetchCategorias">Cargar Categorías</button>
+      <table id="categoriasTable">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- Sección Préstamos -->
+    <section id="prestamos">
+      <h2>Gestión de Préstamos</h2>
+      <button id="fetchPrestamos">Cargar Préstamos</button>
+      <table id="prestamosTable">
+        <thead>
+          <tr>
+            <th>Usuario</th>
+            <th>Libro</th>
+            <th>Fecha de Préstamo</th>
+            <th>Fecha de Devolución</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- Sección Multas -->
+    <section id="multas">
+      <h2>Gestión de Multas</h2>
+      <button id="fetchMultas">Cargar Multas</button>
+      <table id="multasTable">
+        <thead>
+          <tr>
+            <th>Prestamo ID</th>
+            <th>Cantidad</th>
+            <th>Fecha de Multa</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Biblioteca Gestión</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
